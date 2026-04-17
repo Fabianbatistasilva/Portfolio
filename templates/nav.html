@@ -1,137 +1,90 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/css/base.css' %}">
-    <link rel="stylesheet" href="{% static '/js/jquery.js' %}">
-    <link rel="stylesheet" href="{% static '/css/nicepage.css' %}">
-    <link rel="stylesheet" href="{% static '/css/home.css' %}">
-    <link rel="stylesheet" href="{% static '/css/sobre.css' %}">
-    <link rel="stylesheet" href="{% static '/css/form_oferta.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="{% static '/js/main.js' %}">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
-    <title>{%block 'title' %}{%endblock%}</title>
-</head>
-<script src="{% static '/js/main.js' %}"></script>
-<body>
-    <header class="u-align-center-sm u-align-center-xs u-clearfix u-header u-palette-5-light-3 u-header" id="sec-e199">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
-                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
-                    <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
-                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style="">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content">
-                            <g>
-                                <rect y="36" width="302" height="30"></rect>
-                                <rect y="236" width="302" height="30"></rect>
-                                <rect y="136" width="302" height="30"></rect>
-                            </g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="u-custom-menu u-nav-container">
-                    <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
-                        <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'home' %}" style="padding: 10px;">Página Inicial</a>
-                        </li>
-                        <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'sobre' %}" style="padding: 10px;">Sobre</a>
-                        </li>
-                        <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'contato' %}" style="padding: 10px;">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="u-custom-menu u-nav-container-collapse">
-                    <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                        <div class="u-inner-container-layout u-sidenav-overflow">
-                            <div class="u-menu-close"></div>
-                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                                <li class="u-nav-item">
-                                    <a class="u-button-style u-nav-link" href="{% url 'home' %}">Página Inicial</a>
-                                </li>
-                                <li class="u-nav-item">
-                                    <a class="u-button-style u-nav-link" href="{% url 'sobre' %}">Sobre</a>
-                                </li>
-                                <li class="u-nav-item">
-                                    <a class="u-button-style u-nav-link" href="{% url 'contato' %}">Contato</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-                </div>
-            </nav>
-            <p class="u-text u-text-default u-text-1">Fabian Batista da Silva</p>
-            <div class="u-social-icons u-spacing-10 u-social-icons-1">
-                <a class="u-social-url" title="facebook" target="_blank" href="https://www.linkedin.com/in/fabian-batista-965420214/">
-                    <span class="u-icon u-social-facebook u-social-icon u-icon-1">
-                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b245"></use>
-                        </svg>
-                        <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b245">
-                            <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
-                            <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-  c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
-                        </svg>
-                    </span>
-                </a>
-                <a class="u-social-url" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/fabian-batista-965420214/">
-                    <span class="u-icon u-social-icon u-social-linkedin u-icon-2">
-                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0f6d"></use>
-                        </svg>
-                        <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-0f6d">
-                            <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
-                            <path fill="#FFFFFF" d="M89.6,89.6H75.8V67.6c0-5.2-0.1-11.8-7.2-11.8c-7.2,0-8.3,5.6-8.3,11.4v22.4H46.5V44.3h13.1v6.2h0.2
-                            c1.8-3.5,6.2-7.2,12.8-7.2c13.7,0,16.2,9,16.2,20.8v25.5H89.6z M35.1,38.2c-4.2,0-7.5-3.4-7.5-7.5c0-4.2,3.4-7.5,7.5-7.5
-                            s7.5,3.4,7.5,7.5C42.6,34.9,39.2,38.2,35.1,38.2z M42,89.6H28.2V44.3H42V89.6z"></path>
-                        </svg>
-                    </span>
-                </a>
-                <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/fabian_batista_silva/">
-                    <span class="u-icon u-social-icon u-social-instagram u-icon-3">
-                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6fe6"></use>
-                        </svg>
-                        <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6fe6">
-                            <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
-                            <path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-  z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path>
-                            <path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path>
-                            <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
-  C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-  c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
-                        </svg>
-                    </span>
+<header class="u-align-center-sm u-align-center-xs u-clearfix u-header u-palette-5-light-3 u-header" id="sec-e199">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
+            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+                <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
+                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content">
+                        <g>
+                            <rect y="36" width="302" height="30"></rect>
+                            <rect y="236" width="302" height="30"></rect>
+                            <rect y="136" width="302" height="30"></rect>
+                        </g>
+                    </svg>
                 </a>
             </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'home' %}" style="padding: 10px;">Página Inicial</a>
+                    </li>
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'sobre' %}" style="padding: 10px;">Sobre</a>
+                    </li>
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'contato' %}" style="padding: 10px;">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="{% url 'home' %}">Página Inicial</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="{% url 'sobre' %}">Sobre</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="{% url 'contato' %}">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+        <p class="u-text u-text-default u-text-1">Fabian Batista da Silva</p>
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+            <a class="u-social-url" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/fabian-batista-965420214/">
+                <span class="u-icon u-social-facebook u-social-icon u-icon-1">
+                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b245"></use>
+                    </svg>
+                    <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b245">
+                        <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                        <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2 c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="u-social-url" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/fabian-batista-965420214/">
+                <span class="u-icon u-social-icon u-social-linkedin u-icon-2">
+                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0f6d"></use>
+                    </svg>
+                    <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-0f6d">
+                        <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
+                        <path fill="#FFFFFF" d="M89.6,89.6H75.8V67.6c0-5.2-0.1-11.8-7.2-11.8c-7.2,0-8.3,5.6-8.3,11.4v22.4H46.5V44.3h13.1v6.2h0.2 c1.8-3.5,6.2-7.2,12.8-7.2c13.7,0,16.2,9,16.2,20.8v25.5H89.6z M35.1,38.2c-4.2,0-7.5-3.4-7.5-7.5c0-4.2,3.4-7.5,7.5-7.5 s7.5,3.4,7.5,7.5C42.6,34.9,39.2,38.2,35.1,38.2z M42,89.6H28.2V44.3H42V89.6z"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/fabian_batista_silva/">
+                <span class="u-icon u-social-icon u-social-instagram u-icon-3">
+                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6fe6"></use>
+                    </svg>
+                    <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6fe6">
+                        <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                        <path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2 z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path>
+                        <path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path>
+                        <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8 C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5 c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
+                    </svg>
+                </span>
+            </a>
         </div>
-    </header>
-    <script src="https://chatsimple-widget.s3.us-east-2.amazonaws.com/chat-bot-loader.js" defer></script>
-</body>
-</html>
+    </div>
+</header>
